@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+/*||||||||||||GENERAL LAYOUT, MARGIN, PADDING||||||||||||*/
+
+
+
+header {
+    padding: 40px 10px 10px 10px;
+    height: 50vh;
+}
+header img {
+    margin: auto;
+}
+#link_to_my_work {
+    text-align: center;
+    margin-top: 150px;
+}
+#main-content {
+    margin-top: 50px;
+    text-align: center;
+}
+.projects{
+    margin: 100px auto;
+}
+#main-content {
+    /*HIDES THE MAIN CONTENT AREAD AND DISPLAYS IT BACK WHEN THE "VIEW MY WORK BOTTOM IS CLIKED"*/
+    
+    display: none;
+}
+#main-content:target {
+    display: block;
+}
+footer {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: #BC0B55;
+}
+.btn-default {
+    color: #BC0B55;
+    /*Overides Bootstrap styling for color in buttons*/
+}
+.btn-default:hover {
+    color: #3C1626;
+    background-color: #C7477D;
+    border-color: #adadad;
+}
+/*||||||||||||TYPOGRAPHY||||||||||||*/
+
+h3 {
+    font-family: 'Lobster Two', cursive;
+    color: #3C1626;
+    font-size: 2.5em;
+}
+header h3 {
+    text-align: center;
+}
+h4 {
+    color: #C7477D;
+    font-size: 1.5em;
+    padding-top: 5px;
+    font-weight: bold;
+}
+h5 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #bc0b55;
+}
+p {
+    font-size: 1em;
+    color: #3C1626;
+}
+.description {
+    text-align: justify;
+    line-height: 25px;
+    width: 80%;
+    margin: auto;
+    color: rgba(167, 161, 161, 1.00);
+    padding-bottom: 10px;
+}
+/*||||||||||||MEDIA QUERIES||||||||||||*/
+/*-------------LESS THAN 400PX---------*/
+
+@media screen and (max-width: 450px) {
+    .btn-default {
+        display: block;
+        /* MAKES SOCIAL MEDIA ICONS DISPLAY BLOCK IN SMALL VIEW SIZES*/
+    }
+}
+/*-------------MORE THAN 450PX---------*/
+
+@media screen and (min-width: 451px) and (max-width: 959px) {
+    .projects{
+        margin: 100px auto;
+    }
+}
+/*-------------MORE THAN 499PX---------*/
+
+@media screen and (min-width: 960px) {
+    .container-fluid {
+        max-width: 80%;
+    }
+}
