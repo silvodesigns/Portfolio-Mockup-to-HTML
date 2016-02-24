@@ -22,14 +22,6 @@ header img {
 .projects{
     margin: 100px auto;
 }
-#main-content {
-    /*HIDES THE MAIN CONTENT AREAD AND DISPLAYS IT BACK WHEN THE "VIEW MY WORK BOTTOM IS CLIKED"*/
-    
-    display: none;
-}
-#main-content:target {
-    display: block;
-}
 footer {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -78,6 +70,10 @@ p {
     margin: auto;
     color: rgba(167, 161, 161, 1.00);
     padding-bottom: 10px;
+}
+.hide{
+
+    display:none;
 }
 /*||||||||||||MEDIA QUERIES||||||||||||*/
 /*-------------LESS THAN 400PX---------*/
